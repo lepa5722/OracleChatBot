@@ -5,15 +5,38 @@ NetNinja is a cybersecurity-focused chatbot that protects against and predicts c
 
 **Datasets Considered**
 
-1. Cybersecurity Intrusion Data
+**1. CyberThreatDetection**
 
-2. Embedded System Network Security Dataset
+- This dataset is designed for cyber threat detection using machine learning techniques.
+- It includes various network traffic features such as packet size, duration, flow statistics, and attack labels (DDoS, Brute Force, Ransomware, etc.).
+- Ideal for training intrusion detection systems (IDS) and anomaly detection models in a cybersecurity context.
 
-3. Cybersecurity Dataset
+**2. INDDOS24Dataset**
 
-4. GPS Spoofing Attack
+- A dataset focused on Distributed Denial-of-Service (DDoS) attacks, one of the most prevalent cyber threats today.
+- It contains network traffic logs, attack patterns, and timestamps, allowing for the development of DDoS mitigation models.
+- Helps improve real-time threat detection by analyzing variations in network traffic behavior.
 
-5. DDoS Dataset
+**3. MicrosoftSecurityIncidentPrediction**
+
+- A large-scale dataset provided by Microsoft Security AI Research for predicting security incidents.
+- It includes over 1 million security alerts, 13 million evidence pieces, and 26,000 remediation actions from real-world enterprise environments.
+- Used for threat forecasting, guided response systems, and automated cybersecurity incident triage.
+- A valuable resource for predicting and mitigating security incidents before they escalate.
+
+**4. NetworkTrafficData**
+
+- Captures network traffic metadata to analyze normal and malicious activities.
+- Includes features such as IP addresses, protocols, bytes transferred, and traffic flow rates.
+- Useful for identifying anomalies, traffic monitoring, and understanding malicious communication patterns.
+- Helps in time-series forecasting of cyber threats based on traffic variations.
+
+**5. TokyoDroneCommunicationAndSecurityDataset**
+
+- A unique dataset focusing on security threats in drone communication networks.
+- Includes logs of drone-to-drone and drone-to-ground station communication with security event labels.
+- Critical for securing UAV (Unmanned Aerial Vehicle) networks, preventing GPS spoofing, and detecting unauthorized drone activity.
+- Helps expand cybersecurity research into aerial and IoT-based communication systems.
 
 **Dataset Storage Structure**
 
