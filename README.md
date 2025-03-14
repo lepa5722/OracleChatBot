@@ -35,6 +35,9 @@ The following five datasets were selected for analysis:
 - Includes normal and malicious traffic patterns in **IoT-based systems**.
 - Useful for analyzing **wireless communication security** in drone networks.
 
+You can access the datasets via the following Google Drive link: 
+https://drive.google.com/drive/folders/1hUmka8MZSmpYvkBCLqX5-Ri_3y4i1fBC?usp=drive_link
+
 ## Data Preprocessing Approach
 A **custom preprocessing pipeline** was implemented using the **Temporal Fusion Transformer (TFT) framework**. This approach enables:
 - **Time-series modeling** by extracting timestamp-based features.
