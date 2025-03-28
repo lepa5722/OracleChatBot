@@ -13,8 +13,6 @@
 #   Step 4: If "ip", user just enters a code like "100610", or if "timeslot", user enters a single time point.
 #   Step 5: final results or wait 'restart'/'exit'
 #
-# 这里我们去除了原先的 IP 正则判断，改为直接存储用户输入。
-# 例如用户输入 "100610" 或 "1037" 都直接接受为 IP 代码。
 
 # oracle_server.py
 #
@@ -70,9 +68,9 @@ puncts = set(string.punctuation)
 cesnet_config_path = "D:\\PythonProject\\chatbot\\config\\config\\CESNET.yaml"  # Update with actual path
 try:
     cesnet_adapter = CESNETAdapter(cesnet_config_path)
-    print("✅ CESNET adapter initialized successfully")
+    print("CESNET adapter initialized successfully")
 except Exception as e:
-    print(f"⚠️ Error initializing CESNET adapter: {e}")
+    print(f"Error initializing CESNET adapter: {e}")
     print("Using fake predictions as fallback for CESNET")
     cesnet_adapter = None
 
@@ -80,9 +78,9 @@ except Exception as e:
 cic_config_path = "D:\\PythonProject\\chatbot\\config\\config\\CSE-CIC-IDS2018.yaml"  # Update with actual path
 try:
     cic_adapter = Inference(cic_config_path)
-    print("✅ CIC-IDS2018 adapter initialized successfully")
+    print("CIC-IDS2018 adapter initialized successfully")
 except Exception as e:
-    print(f"⚠️ Error initializing CIC-IDS2018 adapter: {e}")
+    print(f"Error initializing CIC-IDS2018 adapter: {e}")
     print("Using fake predictions as fallback for CIC-IDS2018")
     cic_adapter = None
 
