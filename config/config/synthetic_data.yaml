@@ -1,0 +1,48 @@
+batch_size: 64
+category_counts:
+- 7
+- 2
+device: cuda
+ds_name: CSE-CIC-IDS2018
+epochs: 100
+exp_log_path: log\synthetic_data\03-20-2025-18-59-58
+exp_name: synthetic_data
+input_obs_loc:
+- 10
+known_categorical_inputs:
+- 16
+- 17
+known_regular_inputs:
+- 0
+- 1
+- 2
+- 3
+- 4
+- 5
+- 6
+- 7
+- 8
+- 9
+log_each_step: true
+lr: 0.0001
+model: tft
+n_workers: 1
+num_encoder_steps: 48
+num_heads: 8
+output_size: 1
+input_size: 18
+max_gradient_norm: 0.5
+early_stopping_patience: 20
+quantiles:
+- 0.1
+- 0.5
+- 0.9
+seed: 9886
+static_input_loc:
+- 15
+total_time_steps: 96
+unknown_time_features:
+- 11
+- 12
+- 13
+- 14

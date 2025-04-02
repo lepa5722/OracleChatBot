@@ -1,0 +1,70 @@
+batch_size: 256
+category_counts:
+- 2
+- 2
+- 7
+device: cuda
+ds_name: CSE-CIC-IDS2018
+epochs: 100
+exp_log_path: log\CESNET\03-26-2025-20-13-39
+exp_name: CESNET
+input_obs_loc:
+- 0
+known_categorical_inputs:
+- 38
+- 39
+- 40
+known_regular_inputs:
+- 34
+- 35
+- 36
+- 37
+log_each_step: true
+lr: 0.0005
+model: tft
+n_workers: 0
+num_encoder_steps: 48
+num_heads: 4
+output_size: 1
+hidden_layer_size: 96
+quantiles:
+- 0.1
+- 0.5
+- 0.9
+seed: 5784
+static_input_loc:
+- 31
+- 32
+- 33
+total_time_steps: 96
+unknown_time_features:
+- 1
+- 2
+- 3
+- 4
+- 5
+- 6
+- 7
+- 8
+- 9
+- 10
+- 11
+- 12
+- 13
+- 14
+- 15
+- 16
+- 17
+- 18
+- 19
+- 20
+- 21
+- 22
+- 23
+- 24
+- 25
+- 26
+- 27
+- 28
+- 29
+- 30
